@@ -21,3 +21,4 @@ grep -q "bar in subdir" subdir/file3.txt || { echo "FAIL: file3 not replaced"; e
 echo "PASS: All files correctly modified"
 cd ..
 rm -rf test_env
+#GHActions невидит этот файл, пробую с ним что-то вертеть (в данном случае добавляю и фиксирую одну строку во имя хоть какого-то изменения)
