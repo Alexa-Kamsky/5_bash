@@ -13,4 +13,3 @@ find "$DIR" -type f -exec sed -i 's/\r$//' {} \;
 
 find "$DIR" -type f -name "*.txt" -exec sed -i "s|${SEARCH}|${REPLACE}|g" {} \; 
 echo "Замена прошла успешно"
-
