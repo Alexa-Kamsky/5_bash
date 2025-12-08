@@ -12,5 +12,5 @@ mkdir -p "$DIR_ARCHIVE"
 
 find "$DIR_LOG" -type f -name "*.log" -mtime +7 | while read file; do
   base=$(basename "file")
-  gzip -c "file" > "DIR_ARCHIVE/$base.gz"
+  gzip -c "file" > "$DIR_ARCHIVE/$base.gz"
 done
